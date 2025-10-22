@@ -18,7 +18,8 @@ Simplifier la configuration tout en améliorant la stabilité et la qualité d�
 
 ### 📦 Fichiers inclus  
 - 🧩 **firmware.hex** : fichier prêt à flasher avec [STM32Flasher](https://github.com/FYSETC/STM32Flasher).  
-- ⚙️ **Configuration.h** et **Configuration_adv.h** : fichiers de configuration pour **Marlin 2.1.2.5**, si vous souhaitez compiler le firmware vous-même.  
+- ⚙️ **Configuration.h** et **Configuration_adv.h** : fichiers de configuration pour **Marlin 2.1.2.5**, si vous souhaitez compiler le firmware vous-même.
+- 🧾 **Start G-code.txt** : code à copier dans votre slicer pour la séquence de démarrage de l’impression.  
 
 ---
 
@@ -40,4 +41,5 @@ Simplify configuration while improving print stability and quality.
 
 ### 📦 Included Files  
 - 🧩 **firmware.hex**: ready-to-flash file using [STM32Flasher](https://github.com/FYSETC/STM32Flasher).  
-- ⚙️ **Configuration.h** and **Configuration_adv.h**: configuration files for **Marlin 2.1.2.5**, if you wish to compile the firmware yourself.  
+- ⚙️ **Configuration.h** and **Configuration_adv.h**: configuration files for **Marlin 2.1.2.5**, if you wish to compile the firmware yourself.
+- 🧾 **Start G-code.txt**: code to copy into your slicer for the print start sequence. 
