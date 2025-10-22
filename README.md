@@ -3,7 +3,7 @@
 ## 🇫🇷 Français
 
 ### 🖨️ Description  
-Ce dépôt contient ma configuration **Marlin** personnalisée pour mon imprimante 3D.  
+Ce dépôt contient ma configuration **Marlin** personnalisée pour une **Ender 3 V1** équipée d’une **carte mère FYSETC Cheetah V1.2A** et d’un **capteur BLTouch**.   
 Elle est optimisée pour la fiabilité, la facilité d’utilisation et un contrôle précis de la température et du nivellement du plateau.  
 
 ### ⚙️ Liste des ajouts et améliorations  
@@ -26,7 +26,7 @@ Simplifier la configuration tout en améliorant la stabilité et la qualité d�
 ## 🇬🇧 English
 
 ### 🖨️ Description  
-This repository contains my custom **Marlin** configuration for my 3D printer.  
+This repository contains my custom **Marlin** configuration for a **Creality Ender 3 V1** equipped with a **FYSETC Cheetah V1.2A** mainboard and a **BLTouch** probe.  
 It is optimized for reliability, ease of use, and precise control of temperature and bed leveling.  
 
 ### ⚙️ Features and Improvements  
