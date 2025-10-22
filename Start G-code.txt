@@ -1,0 +1,32 @@
+; --- Start G-code personnalisé ---
+G90 ; coordonnées absolues
+M83 ; extrusion relative
+
+; === Chauffe du bed en premier ===
+M140 S[bed_temperature_initial_layer]    ; chauffe le lit sans attendre
+M190 S[bed_temperature_initial_layer]    ; attend que le lit atteigne la température
+
+; === Homing et nivellement ===
+M104 S150                                ; chauffe la buse à 150°C (évite les coulures)
+G4 S10                                   ; petite pause pour chauffer un peu
+G28                                      ; homing de tous les axes
+G29                                      ; auto bed leveling à température du lit
+
+; === Parking de la tête ===
+G1 Z10 F240                              ; monte un peu la tête
+G1 X2 Y10 F3000                          ; déplace sur le bord du plateau
+
+; === Chauffe de la buse à la température d’impression ===
+M104 S[nozzle_temperature_initial_layer] ; chauffe la buse à la température finale
+M109 S[nozzle_temperature_initial_layer] ; attend la température de la buse
+
+; === Préparation de la purge ===
+G1 Z0.28 F240
+G92 E0
+G1 Y140 E10 F1500                        ; purge en ligne
+G1 X2.3 F5000
+G92 E0
+G1 Y10 E10 F1200                         ; deuxième ligne de purge
+G92 E0
+G1 Z3 F600                               ; <-- relève la tête de 3 mm après la purge
+; --- Fin du Start G-code ---
